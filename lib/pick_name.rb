@@ -31,7 +31,7 @@ class RandomPeople
 
     def person_provider(country)
 
- 	    http = Net::HTTP.new('uinames.com')
+ 	    http = Net::HTTP.new('seesaw-uinames.herokuapp.com')
 
       begin
         response = http.request(Net::HTTP::Get.new("/api/?ext&region=#{country}"))
